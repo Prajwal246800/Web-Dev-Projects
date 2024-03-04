@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 100vh;
+    /* background-image: url("../img1.jpeg"); */
+    background-color: rgb(17, 2, 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+.navbar .logo{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.nav-menu ul li:hover{
+    background-color: #fc9003;
+    transition: 0.5s ease;
+}
+.toggle-btn{
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 32px;
+    display: none;
+}
+.toggle-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0px 60px;
+}
+.content h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.content h3{
+    color: #a1a1a1;
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.content .button{
+    margin-top: 25px;
+}
+.content .button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #fc9003;
+    border-radius: 5px;
+    padding: 15px 25px;
+    letter-spacing: 1.5px;
+}
+.content .button a:hover{
+    background-color: #9dd153;
+    transition: 0.5s ease;
+}
+@media(max-width: 768px){
+    .toggle-btn{
+        display: flex;
+        z-index: 2;
+    }
+    .nav-menu ul{
+        width: 100%;
+        background-color: #162427;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: none;
+        width: 100%;
+    }
+    .nav-menu ul li{
+        margin: 10px 0px;
+    }
+    .nav-menu ul li a{
+        font-size: 20px;
+    }
+    .navbar .logo{
+        font-size: 25px;
+    }
+    .content h1{
+        font-size: 40px;
+    }
+    .navbar h3{
+        font-size: 15px;
+    }
+    .navbar .button a{
+        font-size: 15px;
+        padding: 9px 15px;
+    }
+}
