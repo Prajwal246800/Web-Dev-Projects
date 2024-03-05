@@ -216,3 +216,51 @@
 .main .container .icon{
     padding: 10px;
 }
+.Our-Services{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 100%;
+    height: 150px;
+}
+.Our-Services .heading{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+.Our-Services .heading .bar{
+    height: 2px;
+    width: 220px;
+    background:linear-gradient(to right, orange,blue);
+}
+.Our-Services .samples{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.Our-Services .samples .container{
+    background-color: #000000;
+    /* margin: 0px 20px;
+    padding: 0px 10px; */
+    width: 300px;
+    height: 200px;
+}
+.Our-Services .samples .container .caption{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+.Our-Services .samples .container .caption .icon{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+    background:linear-gradient(to right, orange,blue);
+    border-radius: 50%;
+}
